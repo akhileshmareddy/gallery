@@ -1,0 +1,283 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background-image: linear-gradient(45deg,rgb(179, 179, 216),rgb(237, 237, 207));
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    
+}
+.bluebytes{
+    width: 400px;
+    height: 60px;
+    background-color: blue;
+    border-radius: 50px;
+    z-index: 0;
+}
+#a{
+    position: absolute;
+    left: -300px;
+    transform: rotate(45deg);
+    animation: blues 1s ;
+}
+#b{
+    position: absolute;
+    left: -200px;
+    transform: rotate(45deg);
+    animation:blues 1.5s ;
+}
+#c{
+    position: absolute;
+    left: -100px;
+    transform: rotate(45deg);
+    animation:blues 2s ;
+
+}
+.orangebytes{
+    width: 400px;
+    height: 60px;
+    background-color: orange;
+    border-radius: 50px;
+}
+#d{
+    position: absolute;
+    bottom: -150px;
+    right: 200px;
+    transform: rotate(45deg);
+    animation: oranges 1s;
+
+    
+}
+#e{
+    position: absolute;
+    bottom: -50px;
+    right: 100px;
+    transform: rotate(45deg);
+    animation: oranges 1.5s;
+
+}
+#f{
+    position: absolute;
+    bottom: 10px;
+    right: 0px;
+    transform: rotate(45deg);
+    animation: oranges 2s;
+
+
+}
+#signupblock{
+    width: 80%;
+    height: 80%;
+    /* background-color: rgba(0, 128, 0, 0.187); */
+    position: relative;
+    z-index: 2;
+    left:8%;
+    top: 50px;
+    border-radius: 60px;
+    
+}
+#leftsign{
+    width: 50%;
+    height: 100%;
+    box-shadow: 2px 2px 2px blue,-2px -2px 5px blue;
+    background-color: azure;
+    position: absolute;
+    border: 50px;
+    z-index:8;
+    
+
+}
+ #rightdes{
+    width: 50%;
+    height: 100%;
+    background-color: rgba(123, 123, 156, 0.696);
+    position: absolute;
+    right: 0px;
+    border-radius: 50px;
+
+    
+    
+    
+} 
+@keyframes blues {
+    from{
+      left: -500px;
+      top: -500px;
+
+    }
+    to{
+        
+        
+    }
+    
+}
+@keyframes oranges {
+    from{
+        bottom: -500px;
+        right: 0px;
+
+    }
+    
+}
+
+.names{
+    width: 45%;
+    height:60%;
+    /* background-color: pink; */
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px blue;
+    border: none;
+    text-align: center;
+    font-size: 20px;
+    outline: none;
+    
+    
+    
+}
+#names{
+    width: 100%;
+    height: 50px;
+    /* background-color: orange; */
+    display: flex;
+    justify-content:  center;
+    align-items: center;
+
+
+    
+
+
+    
+
+}
+    
+#details{
+    width: 100%;
+    height:152px;
+    /* background-color: maroon; */
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    /* align-content:space-evenly; */
+    align-items:center;
+    align-items: center;
+
+
+
+}
+.inputs{
+    width:80%;
+    text-align: start;
+    padding-left: 20px;
+    border-radius: 20px;
+    border: none;
+    box-shadow:2px 2px 2px blue;
+     font-size: 20px;
+     outline: none;
+     margin-top: 10px;
+     justify-content: space-evenly;
+}
+#dob{
+    display: flex;
+    width: 100%;
+    height: 60px;
+    /* background-color: mediumaquamarine; */
+    justify-content: center;
+     align-content: space-evenly;
+    align-items:center;
+    outline: none;
+    border-radius: 20px;
+}
+#date,#month,#year{
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    box-shadow: 2px 2px 2px black;
+    width: 20%;
+    justify-content: space-evenly;
+}
+#terms{
+    width: 95%;
+    height: 50px;
+    /* background-color: lavenderblush; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left:15px ;
+    font-size: 10px;
+}    
+#gender{
+    width:100%;
+    height: 40px;
+    /* background-color: aquamarine; */
+    display:flex;
+    justify-content: center;
+    
+    
+    /* align-content: space-around;*/
+}
+#m,#l,#t{
+    width: 70px;
+    height: 20px;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 2px 2px 2px black;
+    align-content: space-evenly;
+    
+
+}
+#i{
+    width: 400px;
+    height: 400px;
+    animation: img 10s infinite;
+
+}
+@keyframes img {
+    0%,100%{
+        transform: 0px;
+    }
+    10%,30%{
+        transform: translate(-200px 200px) scale(1.2);
+    }
+    50%,70%{
+        transform: translate(60px);
+    }
+    60%,80%{
+        transform: translate(-20px, 20px) ;
+    }
+    
+}
+h1{
+    z-index: 5;
+    text-align: center;
+}
+#sub{
+    text-align: center;
+    width: 150px;
+    height: 50px;
+    border-radius: 50px;
+    outline: none;
+    justify-content: center;
+    margin-left: 35%;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: blue;
+    /* color: white; */
+    border: none;
+    box-shadow: 2px 2px 2px blue;
+    
+}
+#have{
+    width: 100%;
+    height: 30px;
+}
+#sub:hover{
+    background-color: aqua;
+}
+div{
+    border-radius: 50px;
+}

@@ -1,0 +1,176 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+#nav{
+    display: flex;
+    position: fixed;
+    width:100vw;
+    height: 11vh;
+    background-color: aqua;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 2;
+
+
+}
+body{
+    width: 100vw;
+    height: 100vh;
+}
+#logo{
+    width: 8vw;
+    height: 11vh;
+    border-radius: 5vw;
+    background-color: pink;
+    box-shadow: 3px 3px black,-3px -3px black;
+}
+#selection{
+    font-size:2.5vw;
+    height: 11vh;
+    /* background-color: red; */
+    border-radius: 1.5vw;
+    text-align: center;
+}
+#search{
+    width:30vw ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: orange; */
+    border-radius:1.5vw ;
+    background-color: aliceblue;
+}
+
+#text{
+    width: 25vw;
+    height: 11vh;
+    border-radius:5vw;
+    border: none;
+    background-color: antiquewhite;
+    text-align: center;
+    outline: none;
+}
+#searchicon{
+    width: 5vw;
+    height: 11vh;
+    border-radius: 10px;
+}
+#LOGIN,#CART{
+    color: azure;
+    font-size: 3vw;
+    text-decoration: none;
+}
+#slider{
+    width: 100vw;
+    height: 90vh;
+    position: absolute;
+    top:11vh ;
+    background-color: rgba(102, 51, 153, 0.034);
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+    background-image: url("../assets/images/computer.png");
+    background-size: 100% 100%;
+    
+
+    /* background-color: maroon; */
+
+
+}
+#left,#right{
+    width: 5vw;
+    height: 5vh;
+
+}
+.containers{
+    width: 30vw;
+    height: 50vh;
+    background-image: linear-gradient(45deg,blue,purple,blue,purple);
+    position: relative;
+    overflow: hidden;
+}
+#categories{
+    width: 100vw;
+    height: 150vh;
+    background-color: orange;
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    top: 101vh;
+    /* column-gap: 100px; */
+    /* row-gap: 200px; */
+}
+.cloth,.electronic{
+    width: 10vw;
+    height: 25vh;
+    position: absolute;
+    transition: all 1.2s;
+}
+#pant,#tab{
+    top: -30px;
+    rotate: 45deg;
+    left: -50px;
+
+}
+#coat,#laptop{
+    right: -10px;
+    top: -10px;
+    rotate: -50deg;
+   
+
+}
+#dress,#mobile{
+    bottom: -30px;
+    rotate: 45deg;
+    left: -50px;
+}
+#shirt,#tv{
+    right:-30px;
+    bottom: -40px;
+    rotate: -45deg;
+    
+}
+
+
+#clothname,#electronicname{
+    position: absolute;
+    left: 70px;
+    bottom: 110px;
+    color: whitesmoke;
+    font-size: 60px;
+    text-transform: uppercase;
+
+}
+.containers:hover #clothname,.containers:hover #electronicname{
+    transform: scale(1.2);
+    letter-spacing: 3px;
+    z-index: 7;
+}
+.containers:hover #pant,.containers:hover #tab{
+    transform: translate(50px,10px);
+    
+
+}
+.containers:hover #coat,.containers:hover #laptop{
+    transform: translate(-50px,10px);
+}
+.containers:hover #dress,.containers:hover #mobile{
+    transform: translate(50px,-50px);
+}
+.containers:hover #shirt,.containers:hover #tv{
+    transform: translate(-50px,-50px);
+}
+
+
+
+
+
+
+
+
+
+

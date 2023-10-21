@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="favicon" href="../assets/images/shoppingicon.jpg"> -->
+    <link rel="stylesheet" href="../css/homepage.css">
+    <script src="../javascript/homepage.js" defer></script>
+
+</head>
+<body>
+    <nav id="nav">
+         <img src="../assets/images/shoppingicon.jpg" alt="" id="logo">
+         <select name="" id="selection" value="all">
+            <option value="nav">All</option>
+            <option value="">cloths</option>
+            <option value="">electronics</option>
+         </select>
+
+         <div id="search">
+            <input type="text" name="" id="text" placeholder="type here">
+            <input type="image" name="" src="../assets/images/search.png" id="searchicon">
+        </div>
+
+        <a href="#" id="LOGIN">LOGIN</a>
+        <a href="#" id="CART">CART</a>
+
+    </nav>
+    <div id="slider">
+       <input type="button" name="" value="<"  id="left">
+       <input type="button" name="" value=">" id="right" onclick="slide()">
+
+    </div>
+    <div id="categories">
+        <div class="containers" id="cloths">
+            <img  class="cloth" id="coat" src="../assets/images/coat.png" alt="">
+            <img  class="cloth" id="dress" src="../assets/images/dress.png" alt="">
+            <h1 id="clothname">cloths</h1>
+            <img  class="cloth" id="pant" src="../assets/images/pant.png" alt="">
+            <img  class="cloth" id="shirt" src="../assets/images/shirt.png" alt="">
+        </div>
+        <div class="containers" id="electronics">
+            <img class="electronic" id="tab" src="../assets/images/tab.png" alt="">
+            <img class="electronic" id="laptop" src="../assets/images/laptop.png" alt="">
+            <h1 id="electronicname">Electronics</h1>
+            <img class="electronic" id="mobile" src="../assets/images/mobile.png" alt="">
+            <img class="electronic" id="tv" src="../assets/images/tv.png" alt="">
+        </div>
+        <div class="containers" id="grocery"></div>
+        <div class="containers" id="homeappliances"></div>
+        <div class="containers" id="toys"></div>
+
+    </div>
+
+    
+</body>
+</html>
